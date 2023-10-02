@@ -8,8 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/todo_background"
-        android:layout_width="379dp"
-        android:layout_height="91dp"
+        android:layout_width="407dp"
+        android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,26 +18,46 @@
 
         <TextView
             android:id="@+id/todo_textView"
-            android:layout_width="288dp"
-            android:layout_height="50dp"
+            android:layout_width="97dp"
+            android:layout_height="22dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.824"
+            app:layout_constraintHorizontal_bias="0.23"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.853" />
+            app:layout_constraintVertical_bias="0.51" />
 
         <CheckBox
             android:id="@+id/todo_checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/todo_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.697"
+            app:layout_constraintStart_toEndOf="@+id/todo_textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/drag_button"
+            android:layout_width="26dp"
+            android:layout_height="90dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/alt_cizgi"
+            android:layout_width="381dp"
+            android:layout_height="4dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -40,7 +40,7 @@ android {
 dependencies {
     implementation(libs.androidx.room.runtime)
     annotationProcessor(libs.androidx.room.compiler)
-
+    implementation(libs.gson)
     // To use Kotlin annotation processing tool (kapt)
     kapt(libs.androidx.room.compiler)
 
